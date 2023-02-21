@@ -13,7 +13,7 @@ educational_grant, expenses = 10000, 12000
 
 count_of_month = 0
 while count_of_month <= 9:
-    expenses += expenses / 100 * 3
+    expenses += expenses * 0.03
     count_of_month += 1
 demanding = int(educational_grant * 10 - expenses)
 print('Студенту надо попросить', demanding, 'рубля')
