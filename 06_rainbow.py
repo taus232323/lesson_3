@@ -18,13 +18,13 @@ rainbow_colors = (sd.COLOR_RED, sd.COLOR_ORANGE, sd.COLOR_YELLOW, sd.COLOR_GREEN
 # поэкспериментировать с параметрами, что бы было красиво
 
 def bubble(point, step):
-    radius = 500
+    radius = 450
     for i in range(len(rainbow_colors)):
-        radius += 5
-        sd.circle(center_position=point, radius=radius, color=rainbow_colors[i], width=4)
+        radius += 15
+        sd.circle(center_position=point, radius=radius, color=rainbow_colors[i], width=15)
 
 for _ in range(7):
-    point = sd.get_point(550, 50)
+    point = sd.get_point(550, 0)
     step = 5
     bubble(point=point, step=step)
 
