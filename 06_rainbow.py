@@ -24,7 +24,7 @@ def bubble(point, step):
         sd.circle(center_position=point, radius=radius, color=rainbow_colors[i], width=15)
 
 for _ in range(7):
-    point = sd.get_point(550, 0)
+    point = sd.get_point(600, 0)
     step = 5
     bubble(point=point, step=step)
 
